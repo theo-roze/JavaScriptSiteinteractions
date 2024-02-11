@@ -1,0 +1,115 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+.tab {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  display: flex;
+}
+
+.tab li {
+  flex: 1;
+}
+
+.tab button {
+  background-color: lightgray;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 20px;
+  width: 100%;
+  transition: background-color 0.4s;
+  font-size: 18px;
+}
+
+.tab button:hover {
+  background-color: #a5a5a5;
+}
+
+.tab button.active {
+  background-color: gray;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.topright:hover {
+  color: red;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav {
+  width: 100%;
+  margin-top: 10px;
+  background-color: rgb(138, 138, 138);
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav a {
+  font-size: 1.3rem;
+  transition: color 0.3s;
+  transition: background-color 0.4s;
+  border-radius: 10px;
+}
+
+nav a:hover {
+  color: #505050;
+  background-color: #ddd;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 0px 10px;
+}
+
+footer {
+  list-style-type: none;
+  margin: 0;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dark {
+  color: white;
+  background-color: #505050;
+}

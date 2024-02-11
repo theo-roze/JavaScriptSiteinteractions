@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-ul">
+                <li><a href="../index.html">Tab</a></li>
+                <li><a href="../swiperjs/index.html">Swiper</a></li>
+                <li><a href="../formulaire/index.html">Formulaire</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="message-error">
+        <ul></ul>
+    </div>
+
+    <div class="message-success">
+        formulaire envoyé avec succès
+    </div>
+
+    <form action="" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="pseudo">Pseudo</label>
+            <input type="text" id="pseudo" name="pseudo">
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+        </div>
+
+        <div>
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" name="password">
+        </div>
+
+        <div>
+            <label for="classe">Classe actuelle</label><br>
+            <input type="radio" id="classe_1ere" name="classe" value="1ere">
+            <label for="classe_1ere">1ère</label><br>
+            <input type="radio" id="classe_tle" name="classe" value="Tle">
+            <label for="classe_tle">Terminale</label><br>
+        </div>
+
+        <div>
+            <label for="axe">Axe préféré</label>
+            <select id="axe" name="axe">
+                <option value="">Sélectionnez un axe</option>
+                <option value="jeux_videos">Jeux vidéos</option>
+                <option value="marketing">Marketing</option>
+                <option value="creation_design">Création & Design</option>
+                <option value="developpement_web">Développement Web</option>
+                <option value="animation_3D">Animation 3D</option>
+            </select>
+        </div>
+
+        <div>
+            <button type="submit">S'inscrire</button>
+        </div>
+    </form>
+
+    <footer>
+        <button onclick="switchDarkMode()">Changement de thème</button>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

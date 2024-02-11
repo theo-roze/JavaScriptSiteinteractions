@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAB</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="">
+    <header>
+        <nav>
+            <ul class="nav-ul">
+                <li><a href="./index.html">Tab</a></li>
+                <li><a href="./swiperjs/index.html">Swiper</a></li>
+                <li><a href="./formulaire/index.html">Formulaire</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Les différents axes de métiers :</h1>
+        <ul class="tab">
+            <li class="tab-active tab-jeux_videos"><button class="tablinks" onclick="openCity(event, 'Jeux')">Jeux
+                    vidéos</button></li>
+            <li class="tab-animation_3D"><button class="tablinks" onclick="openCity(event, 'Animation')">Animation
+                    3D</button></li>
+            <li class="tab-creation_design"><button class="tablinks" onclick="openCity(event, 'Design')">Création &
+                    Design</button></li>
+            <li class="tab-developpement_web"><button class="tablinks" onclick="openCity(event, 'Web')">Développement
+                    Web</button></li>
+            <li class="tab-marketing"><button class="tablinks" onclick="openCity(event, 'Marketing')">Marketing</button>
+            </li>
+        </ul>
+
+        <div id="Jeux" class="tabcontent jeux_videos active">
+            <span onclick="this.parentElement.style.display='none'" class="topright">&times;</span>
+            <h3>Jeux vidéos</h3>
+            <p>Jeux vidéos : Notre programme vous guidera à travers le processus de conception, développement et
+                programmation de jeux vidéo passionnants, vous permettant d'acquérir les compétences techniques et
+                artistiques nécessaires pour créer des expériences ludiques immersives.</p>
+        </div>
+
+        <div id="Animation" class="tabcontent animation_3D">
+            <span onclick="this.parentElement.style.display='none'" class="topright">&times;</span>
+            <h3>Animation 3D</h3>
+            <p>Notre cursus vous offre l'opportunité d'explorer les techniques de modélisation, de rigging, d'animation
+                et de rendu pour donner vie à des personnages et des environnements virtuels captivants, tout en
+                développant votre sens artistique et votre expertise technique.</p>
+        </div>
+
+        <div id="Design" class="tabcontent creation_design">
+            <span onclick="this.parentElement.style.display='none'" class="topright">&times;</span>
+            <h3>Création & Design</h3>
+            <p>Développez votre créativité et votre sens esthétique avec notre programme axé sur la conception graphique
+                et la création visuelle. Vous explorerez les principes fondamentaux du design, les outils numériques
+                modernes et les dernières tendances en matière de conception pour devenir un créateur polyvalent capable
+                de matérialiser des idées innovantes et percutantes.</p>
+        </div>
+
+        <div id="Web" class="tabcontent developpement_web">
+            <span onclick="this.parentElement.style.display='none'" class="topright">&times;</span>
+            <h3>Développement Web</h3>
+            <p>Notre formation pratique vous enseignera les langages de programmation, les frameworks et les
+                technologies essentiels pour créer des sites web dynamiques, des applications web interactives et des
+                solutions logicielles robustes, vous préparant ainsi à relever les défis du marché du travail numérique.
+            </p>
+        </div>
+
+        <div id="Marketing" class="tabcontent marketing">
+            <span onclick="this.parentElement.style.display='none'" class="topright">&times;</span>
+            <h3>Marketing</h3>
+            <p>développez vos compétences pour influencer les comportements d'achat et stimuler la croissance des
+                entreprises. Notre programme vous initiera aux stratégies de marketing numérique, aux techniques de
+                branding, à l'analyse de marché et à la gestion de campagnes publicitaires, vous préparant ainsi à
+                réussir dans le monde dynamique du marketing et de la communication.</p>
+        </div>
+    </main>
+
+    <footer>
+        <button onclick="switchDarkMode()">Changement de thème</button>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
